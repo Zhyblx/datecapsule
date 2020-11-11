@@ -99,9 +99,9 @@ public class JuheWeather {
 
 
     public static void main(String[] args) throws Exception {
-        JuheWeather juheWeather = new JuheWeather();
-        System.out.println(juheWeather.getCityWeatherID("1512"));
-
+//        JuheWeather juheWeather = new JuheWeather();
+//        System.out.println(juheWeather.getCityWeatherID("1512"));
+//
     }
 
 }

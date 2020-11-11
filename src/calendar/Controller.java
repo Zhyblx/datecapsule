@@ -27,10 +27,10 @@ public class Controller {
 
     public boolean getBoolean() throws Exception {
         Boolean token = true;
-        System.out.println(this.getCalendar());
+//        System.out.println(this.getCalendar());
         JuheCalendar juheCalendar = new JuheCalendar();
         String weekend = juheCalendar.getCalendar(this.getCalendar());
-        System.out.println(weekend);
+//        System.out.println(weekend);
 
         if (token == true) {
             for (String holiday : HolidayInterface.HOLIDAY) {

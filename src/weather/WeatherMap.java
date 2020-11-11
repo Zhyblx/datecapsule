@@ -46,9 +46,9 @@ public class WeatherMap {
 
     }
 
-    public static void main(String[] args) {
-        System.out.println(
-                new WeatherMap().getInfo("31"));
-
-    }
+//    public static void main(String[] args) {
+//        System.out.println(
+//                new WeatherMap().getInfo("31"));
+//
+//    }
 }
