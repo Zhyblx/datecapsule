@@ -1,4 +1,4 @@
-Manifest-Version: 1.0
+Manifest-Version: 1.1
 Main-Class: weather.JuheWeather
 Class-Path: jsoup-1.12.1.jar json-20190722.jar sqlite-jdbc-3.30.1.jar sq
  lite-jdbc-3.30.1.jar

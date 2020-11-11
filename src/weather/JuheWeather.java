@@ -71,9 +71,36 @@ public class JuheWeather {
 
     }
 
+    /**
+     *
+     * 查询城市天气ID
+     *
+     * @param cityId
+     * @throws Exception
+     */
+    public String getCityWeatherID(String cityId) throws Exception {
+        String weatherID = "";
+        Connection connection = Jsoup.connect(
+                "http://apis.juhe.cn/simpleWeather/query?city=" + cityId + "&key=" + key
+        );
+        connection.ignoreContentType(true);
+        connection.timeout(5000);
+        connection.userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36");
+        Document document = connection.get();
+        JSONObject jsonObject = new JSONObject(document.text());
+        JSONObject result = jsonObject.getJSONObject("result");
+        JSONObject realtime = result.getJSONObject("realtime");
+        weatherID = String.valueOf(realtime.get("wid"));
+        return weatherID;
+
+    }
+
+
+
+
     public static void main(String[] args) throws Exception {
         JuheWeather juheWeather = new JuheWeather();
-        System.out.println(juheWeather.getCityWeather("1512"));
+        System.out.println(juheWeather.getCityWeatherID("1512"));
 
     }
 
