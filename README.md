@@ -18,7 +18,8 @@
 |类|方法|类型|参数|说明|
 |---|---|---|---|---|
 |JuheWeather|getCityWeather()|String|参数:cityId;格式：1512|已封装的功能类；查询城市天气情况|
-|JuheWeather|getCityWeatherID()|String|参数:cityId;格式：1512|查询天气ID|
+|JuheWeather|getCityWeatherData|String[]|参数:cityId;格式：1512|查询城市天气ID、当前温度和当天温度区间|
+
 |WeatherMap|getInfo() |String|参数:key;格式：31|查询天气种类|
 
 
